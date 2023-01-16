@@ -1,0 +1,23 @@
+{
+    "params":
+    {
+      "local_server":"True",
+      "local_uri": "mysql://root:@localhost/mydatabase",
+      "prod_uri":"mysql://root:@localhost/mydatabase",
+      "fb_url":"https://facebook.com/sarmadblog",
+      "tw_url":"https://twitter.com/sarmadblog",
+      "gh_url": "https://github.com/sarmadblog",
+      "blog_name": "Sarmad-Blog",
+      "tag_line": "Heaven for programmers",
+      "gmail-user":"sarmadirfan78@gmail.com",
+      "gmail-password":"njpl qmoz sasn mlpr",
+      "about_text": "Who Am I?",
+      "contact_text":"Have questions? I have answers",
+      "no_of_posts": 3,
+      "login_image":"Capture1.PNG",
+      "admin_user":"sarmad",
+      "admin_password": "sarmad18",
+      "upload_location":"D:\\Python projects\\flask-BLOG\\static\\uploads"
+
+    }
+  }
