@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{ url_for('static' , filename ='assets/img/5.jpg')}}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>About Me</h1>
+                    <span class="subheading">{{params['about_text']}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            
+            <div class="col-md-10 col-lg-8 col-xl-7"> 
+                
+                <div class="main">
+                    <div class="wel">WELCOME</div>
+                    <hr>
+                    <div class="infoc">
+                        <div class="devinfo">
+                            <div class="hello">Hi I am</div>
+                            <div class="name">Sarmad Irfan</div>
+                            <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+                                <button onclick="myFunction()" class="btn btn-primary" style="padding: 5px ;" id="myBtn">Read more</button>
+                                
+                                <script>
+                                function myFunction() {
+                                  var dots = document.getElementById("dots");
+                                  var moreText = document.getElementById("more");
+                                  var btnText = document.getElementById("myBtn");
+                                
+                                  if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "Read more"; 
+                                    moreText.style.display = "none";
+                                  } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Read less"; 
+                                    moreText.style.display = "inline";
+                                  }
+                                }
+                                </script></div>
+                               
+                        
+                        </div>
+                        <div class="devpic">
+                            <img src="{{ url_for('static' , filename ='assets/img/1.png')}}"  alt="ssss">
+                        </div>
+                    </div>
+                    <div class="proh">
+                        What I Do
+                    </div> 
+                    <hr>
+                    <div class="pro">
+                      
+                        <div class="a">
+                            <h3>Web Development</h3>
+                            <span class="material-symbols-outlined"  style="font-size: 150px; color:blue">code_blocks</span>
+                        </div>
+                        <div class="b">
+                            <h3>Graphic Design</h3>
+                            <span class="material-symbols-outlined" style="font-size: 150PX; color:rgb(238, 108, 91)">design_services</span>
+                        </div>
+                        
+                    </div>
+                    <br>
+                    <div class="blog"><h1>About {{params['blog_name']}}</h1>
+                        <hr>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam hic ad a necessitatibus laborum et assumenda aspernatur facere quos voluptatem repudiandae similique, vel, non inventore ipsum consequuntur delectus voluptas consequatur. Ipsa excepturi ea quia amet vero minus temporibus id quis! Rem consectetur sequi consequuntur ipsa dolor vero ea odit eius.</p>
+                    <button  class="btn btn-primary" style="padding: 10px "><a href="/contact">Contact Me</a></button>
+                    <button  class="btn btn-primary" style="padding: 10px "><a href="static/uploads/my cv.pdf">Download CV</a></button>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+</main>
+<!-- Footer-->
+
+{% endblock %}
+
+
+
+
+  <!--<div class="main">
+                    <div class="infoc">
+                        <div class="devinfo">
+                            <div class="hello">Hi I am</div>
+                            <div class="name">Sarmad Irfan</div>
+                            <div class="about">Developer, Designer, Expert</div>
+        
+                        
+                        </div>
+                        <div class="devpic">
+                            <img src="{{ url_for('static' , filename ='assets/img/aaA.jpeg')}}" style="height: 300px; width:300px;" alt="ssss">
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn btn-primary text-uppercase> <a  href="/contact" >Contact Me</a> </button>
+                        <button class="btn btn-primary text-uppercase> <a href="adds/CV.pdf" >Download CV</a></button>
+                    </div>--> 

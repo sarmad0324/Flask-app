@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block body %}
+<header class="masthead" style="background-image: url('{{ url_for('static' , filename ='assets/img/8.jpg')}}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>ADMIN PANEL</h1>
+                    <span class="subheading">Manage your Website from here.</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+
+            <h1>Basic Actions</h1>
+            <br>
+            <button class="btn btn-primary text-uppercase"><a href="/dashboard">Dashboard Home</a></button>
+            <button class="btn btn-primary text-uppercase"><a href="/logout">Logout</a></button>
+            <br>
+            <hr>
+            <h1>Add/Edit Posts</h1>
+            
+            <form id="contactForm"  name="sentMessage" action = "/edit/{{sno}}" method="post" novalidate>
+                <div class="form-floating">
+                    <input class="form-control" id="title" type="text" placeholder="Title" name='title' data-sb-validations="required" value="{{post.title}}" />
+                    <label for="title">Title</label>
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                </div>
+                <div class="form-floating">
+                    <input class="form-control" id="tline" type="text" placeholder="Tagline" name='tline' data-sb-validations="required,email" value="{{post.tagline}}" />
+                    <label for="tline">Tagline</label>
+                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                </div>
+                <div class="form-floating">
+                    <input class="form-control" id="slug" type="type" placeholder="Slug" name='slug' data-sb-validations="required" value="{{post.slug}}"/>
+                    <label for="slug">Slug</label>
+                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" id="content" placeholder="Content" style="height: 12rem" name = "content" data-sb-validations="required" value="{{post.content}}"></textarea> <label for="content">Content</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                </div>
+                
+                <div class="form-floating">
+                    <input class="form-control"  id="img_file" placeholder="Image File"  name = "img_file" data-sb-validations="required" value="{{post.img_file}}"/>
+                    <labeL for="img_file">Image File</label>
+                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                </div>
+                <br />
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+         
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <!-- Submit Button-->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button>
+            </form>
+            <br>
+
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

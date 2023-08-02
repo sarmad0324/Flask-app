@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Heebo&family=Noto+Sans&family=Source+Sans+Pro:wght@300&display=swap');
+*body{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+ 
+}
+
+.main {
+    
+       background-color:white;
+    }
+.wel{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    
+    padding: 10px 0px;
+    font-size: 50px;
+}
+.infoc{
+    display: flex;
+}
+
+.name{
+    font-family: 'Lobster', cursive;
+   
+    font-size: 40px;
+    padding: 0px 10px
+}
+.hello{
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding: 0px 10px
+}
+.text{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px 10px;
+    padding-bottom: 10px; 
+}
+img{
+    width: 300px;
+    height: 290px;
+      border-radius: 360px;
+
+}
+.pro{
+    display: flex;
+    text-align: center;
+}
+.a{
+    width: 50%;
+    height: 200px;
+    background-color:whitesmoke;
+    text-align: center;
+    margin: 5px 10px;
+}    
+.b{
+    width: 50%;
+    height: 200px;
+    background-color:whitesmoke;
+    text-align: center;
+    margin: 5px 10px;
+}
+h3{
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;sans-serif;
+}
+.proh{
+    font-family: 'Fredoka One', cursive;
+    
+    font-size: 50px;
+    text-align: center;
+}
+.blog h1{
+    font-family: 'Fredoka One', cursive;
+   
+    font-size: 50px;
+    text-align: center; 
+}
+.blog p{
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 0px 10px;
+        padding-bottom: 10px; 
+}
+.blog button{
+    margin: 20px;
+}
+button a{
+    color: azure;
+}
+@media all and (max-width:600px) and (min-width:300px){
+    *body{
+        box-sizing: border-box;
+        padding: 0%;
+        margin: 0;
+     
+    }
+    
+    .main {
+        
+           background-color:white;
+        }
+    .wel{
+        text-align: center;
+        font-family: 'Fredoka One', cursive;
+        
+        padding: 10px 0px;
+        font-size: 50px;
+    }
+    .infoc{
+        display: inline;
+    }
+    
+    .name{
+        font-family: 'Lobster', cursive;
+       
+        font-size: 40px;
+        padding: 0px 10px
+    }
+    .hello{
+        font-family: 'Lobster', cursive;
+        font-size: 30px;
+        padding: 0px 10px
+    }
+    .text{
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 0px 10px;
+        padding-bottom: 10px; 
+    }
+    img{
+
+        width: 300px;
+        height: 290px;
+        border-radius: 360px;
+    }
+    .a{
+    width: 100%;
+    height: 200px;
+    background-color:whitesmoke;
+    text-align: center;
+    margin: 10px 0px;
+}    
+.b{
+    width: 100%;
+    height: 200px;
+    background-color:whitesmoke;
+    text-align: center;
+    margin: 0px 0px;
+}
+h3{
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;sans-serif;
+}
+       .pro{
+    display: inline;
+    text-align: center;
+}
+    .blog button{
+    margin: 10px;
+}
